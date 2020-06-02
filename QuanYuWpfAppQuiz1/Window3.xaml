@@ -1,0 +1,21 @@
+﻿<Window x:Class="QuanYuWpfAppQuiz1.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanYuWpfAppQuiz1"
+        mc:Ignorable="d"
+        Title="Window3" Height="600" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Tab1">
+                <CheckBox Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked">
+                    Show Tab2
+                </CheckBox>
+            </TabItem>
+            <TabItem Header="Tab2" Visibility="Hidden" x:Name="tab2">
+                <Label>This is tab2</Label>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
